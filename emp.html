@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Banco Central</title>
+    <style>
+        body {
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh; /
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #painel {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        #cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #titulo {
+            color: #333333;
+            font-size: 18px;
+        }
+
+        #logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #quitar-emprestimos {
+            text-align: center;
+            margin-top: 20px;
+            color: #333333;
+            font-size: 18px;
+        }
+        #rodape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ff0000; /* Cor vermelha para o rodapé */
+        padding: 50px;
+        text-align: center;
+        color: #ffffff; /* Cor do texto no rodapé */
+        font-size: 68px;
+    }
+    #tabela-emprestimos {
+            margin-top: 50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border: 2px solid #333; 
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div id="painel">
+        <div id="cabecalho">
+            <div id="titulo">
+                <h2>Banco Central</h2>
+            </div>
+
+            <div id="logo">
+                <img src="BANCO SNT.png" alt="Logo Santander" width="150">
+            </div>
+        </div>
+
+        <div id="quitar-emprestimos">
+            <h3>Quitação de Empréstimos</h3>
+        </div>
+        <div id="tabela-emprestimos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Empréstimo</th>
+                        <th>Valor</th>
+                        <th>Parcelas</th>
+                        <th>Duração</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25.000</td>
+                        <td>125.000,00</td>
+                        <td>6x</td>
+                        <td>6 dias</td>
+                    </tr>
+                    <tr>
+                        <td>20.000</td>
+                        <td>100.000,00</td>
+                        <td>5x</td>
+                        <td>5 dias</td>
+                    </tr>
+                    <tr>
+                        <td>15.000</td>
+                        <td>82.000,00 </td>
+                        <td>5x</td>
+                        <td>5 dias</td>
+                    </tr>
+                    <tr>
+                        <td>12.000</td>
+                        <td>56.000,00</td>
+                        <td>5x</td>
+                        <td>5 dias</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <div id="rodape">
+        SANTANDER
+    </div>
+</body>
+</html>
